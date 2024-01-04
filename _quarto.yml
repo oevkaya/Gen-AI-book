@@ -3,18 +3,17 @@ project:
   output-dir: docs
   
 book:
-  title: "Hands-On Programming with R"
-  author: "Garrett Grolemund"
+  title: "Generative Artificial Intelligence (Gen-AI) booklet"
+  author: "Ozan Evkaya"
   cover-image: images/cover.png
-  site-url: https://rstudio-education.github.io/hopr/
-  repo-url: https://github.com/jjallaire/hopr/
+  repo-url: https://github.com/oevkaya/Gen-AI-book
   repo-branch: master
   repo-actions: [edit]
   sharing: [twitter, facebook, linkedin]
   chapters:
     - index.qmd
     - preface.qmd
-    - part: dice.qmd
+    - part: Intro_GenAI.qmd
       chapters: 
         - basics.qmd
         - packages.qmd

@@ -1,23 +1,31 @@
 ---
 description-meta: |
-  This book will teach you how to program in R, with hands-on examples. I 
-  wrote it for non-programmers to provide a friendly introduction  to the R
-  language. You'll learn how to load data, assemble and disassemble data 
-  objects, navigate R's environment system, write your own functions, and
-  use all of R's programming tools. Throughout the book, you'll use your
-  newfound skills to solve practical data science problems.
+  This is the booklet for **"Generative AI"**.
 ---
 
 ## Welcome {.unnumbered}
 
-This is the website for **"Hands-On Programming with R"**. This book will teach you how to program in R, with hands-on examples. I wrote it for non-programmers to provide a friendly introduction to the R language. You'll learn how to load data, assemble and disassemble data objects, navigate R's environment system, write your own functions, and use all of R's programming tools. Throughout the book, you'll use your newfound skills to solve practical data science problems.
+This is the booklet for **"Generative AI"**. You'll learn;
 
-If you are already comfortable with R, and would like to focus instead how to analyze data using R's Tidyverse packages, I recommend [R for Data Science](http://r4ds.had.co.nz/), a book that I co-authored with Hadley Wickham.
+-   **Basics and history of the development**
+-   **Related Glossary**
+-   **Different Language Models**
+-   **Prompt Engineering concepts and more**
 
 ::: {.callout-note appearance="simple"}
-This book was originally created using [bookdown](https://bookdown.org) and published at <https://rstudio-education.github.io/hopr/>. This site is a port of the original book source to the [Quarto](https://quarto.org) publishing system in order to provide an example of it's use.
+This booklet is a collection of useful and up to date Generative AI related sources. The booklet starts with a general introduction about the history and some concepts first. Thereafter, various Gen-AI related terms or sources will be listed.
 :::
+
+## Credits
+
+This book template is borrowed from [Hands-On Programming with R by Garrett Grolemund](https://jjallaire.github.io/hopr/) and inspired from different quarto books.
 
 ## License
 
-This website is (and will always be) **free to use**, and is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivs 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) License. If you'd like a **physical copy** of the book, you can order it from [amazon](https://www.amazon.com/Hands-Programming-Write-Functions-Simulations/dp/1449359019); it was published by O'Reilly in July 2014. If you'd like to give back, please consider reporting a typo or leaving a pull request at [github.com/rstudio-education/hopr](https://github.com/rstudio-education/hopr).
+This booklet is **free to use**, and is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivs 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) License.
+
+[Generative AI Booklet]()© 2024 is licensed under CC BY-NC 4.0 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" style="margin-left:3px;vertical-align:text-bottom;" width="28"/><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" style="margin-left:3px;vertical-align:text-bottom;" width="28"/><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" style="margin-left:3px;vertical-align:text-bottom;" width="28"/>
+
+## Contributing
+
+This book is free and open source, so please do [open an issue](my-website) if you notice a problem!

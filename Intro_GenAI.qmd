@@ -1,0 +1,11 @@
+# Intro: Basics of Gen-AI {#sec-intro-basics}
+
+Since November 2022, all of us have been amazed by the potential of Generative Artificial Intelligence (Gen-AI) tools---AI with generative powers. Many researchers and developers are working on new-specific implementations of Gen-AI technology, specifically exploiting the power of "Generative Pre-trained Transformers", aka GPTs. I presume that we have partially experienced such tools at a certain level, including various types, different extensions that we can benefit from, and other AI-empowered tools.
+
+> No one knows exactly what capacities consciousness necessarily goes along with, it is hard not to be impressed, and a little scared (David Chalmers, New York University)
+
+Whatever we experienced within the last year has sparked a great space to discuss how the universities should be adapting or what their role should be in the era of AI in general. Besides, it has an immense potential to change how we work in general.
+
+> It sounds ridiculously science fiction, but there is a world in which everyone has their own ongoing AI assistant (Simon Willison, Independent Researcher)
+
+To understand the underlying mechanism, for the working principles of Gen-AI tools, or LLMs, we will zoom in the historical background briefly, transformers architecture in detail before moving forward. Besides, there will be a list of terms or concepts related to the field, as indicated in the Glossary section.

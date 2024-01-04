@@ -1,14 +1,18 @@
-# The Very Basics {#sec-basics}
+# Short History {#sec-history}
 
-This chapter provides a broad overview of the R language that will get you programming right away. In it, you will build a pair of virtual dice that you can use to generate random numbers. Don't worry if you've never programmed before; the chapter will teach you everything you need to know.
+This chapter provides a brief overview of the Gen-AI related advancements in the last couple of years.
 
-To simulate a pair of dice, you will have to distill each die into its essential features. You cannot place a physical object, like a die, into a computer (well, not without unscrewing some screws), but you can save *information* about the object in your computer's memory.
+## Overview
 
-Which information should you save? In general, a die has six important pieces of information: when you roll a die, it can only result in one of six numbers: 1, 2, 3, 4, 5, and 6. You can capture the essential characteristics of a die by saving the numbers 1, 2, 3, 4, 5, and 6 as a group of values in your computer's memory.
+Gen-AI based tools primarily use techniques for deep learning to analyse patterns and relationships in an enormous amount of data (ie. corpus text data), enabling them to generate novel and creative output. Many of these models are based on a technology called Transformers, that takes some input and generates output. In 2017, Vaswani et al. announced "Transformer" as a deep learning architecture that revolutionized Natural Language Processing (NLP) and other sequence-to-sequence tasks \[Vaswani et al., 2017\]. This architecture relies on the self-attention mechanism lets the model weigh the value of words in succession when processing them. With the help of its structure, "Transformers" may capture long-range dependencies in text using this attention mechanism, making them useful for NLP tasks.
 
-Let's work on saving these numbers first, and then consider a method for "rolling" our die.
+Prior to transformers, Long-Short Term Memory networks (LSTMs) were the state- of-the-art in NLP. These architectures contain a cycle or feedback loop in the network connections that allows information to propagate from one step to another, making them ideal for modeling sequential data like language \[Lewis Tunstall, 2022\]. Later, Recurrent Neural Networks (RNNs) played a crucial role relying on encoder-decoder or sequence-to- sequence architecture. As the name suggests, the encoder is responsible for encoding the data from the input sequence into a numerical representation known as the hidden state. Thereafter, the decoder then generates an output sequence based on this state. Although elegant in its simplicity, one weakness with this architecture is that the final hidden state of the encoder creates an information bottleneck, that was the main motivation of introduced self-attention, the main building blocks of the Transformers.
 
-## The R User Interface
+In the next subsection, the details of Transformers will be discussed in detail with some visual aids.
+
+## Cornerstones
+
+## Glossary
 
 Before you can ask your computer to save some numbers, you'll need to know how to talk to it. That's where R and RStudio come in. RStudio gives you a way to talk to your computer. R gives you a language to speak in. To get started, open RStudio just as you would open any other application on your computer. When you do, a window should appear in your screen like the one shown in @fig-console.
 
@@ -17,25 +21,6 @@ Before you can ask your computer to save some numbers, you'll need to know how t
 ::: callout-note
 If you do not yet have R and RStudio installed on your computer--or do not know what I am talking about--visit [Appendix A](#starting). The appendix will give you an overview of the two free tools and tell you how to download them.
 :::
-
-The RStudio interface is simple. You type R code into the bottom line of the RStudio console pane and then click Enter to run it. The code you type is called a *command*, because it will command your computer to do something for you. The line you type it into is called the *command line*.
-
-When you type a command at the prompt and hit Enter, your computer executes the command and shows you the results. Then RStudio displays a fresh prompt for your next command. For example, if you type `1 + 1` and hit Enter, RStudio will display:
-
-``` r
-> 1 + 1
-[1] 2
->
-```
-
-You'll notice that a `[1]` appears next to your result. R is just letting you know that this line begins with the first value in your result. Some commands return more than one value, and their results may fill up multiple lines. For example, the command `100:130` returns 31 values; it creates a sequence of integers from 100 to 130. Notice that new bracketed numbers appear at the start of the second and third lines of output. These numbers just mean that the second line begins with the 14th value in the result, and the third line begins with the 25th value. You can mostly ignore the numbers that appear in brackets:
-
-``` r
-> 100:130
- [1] 100 101 102 103 104 105 106 107 108 109 110 111 112
-[14] 113 114 115 116 117 118 119 120 121 122 123 124 125
-[25] 126 127 128 129 130
-```
 
 ::: callout-tip
 The colon operator (`:`) returns every integer between two integers. It is an easy way to create a sequence of numbers.
@@ -51,42 +36,6 @@ Is this shorthand confusing and slightly lazy to use? Yes. Do a lot of people us
 In some languages, like C, Java, and FORTRAN, you have to compile your human-readable code into machine-readable code (often 1s and 0s) before you can run it. If you've programmed in such a language before, you may wonder whether you have to compile your R code before you can use it. The answer is no. R is a dynamic programming language, which means R automatically interprets your code as you run it.
 :::
 
-If you type an incomplete command and press Enter, R will display a `+` prompt, which means R is waiting for you to type the rest of your command. Either finish the command or hit Escape to start over:
-
-``` r
-> 5 -
-+
-+ 1
-[1] 4
-```
-
-If you type a command that R doesn't recognize, R will return an error message. If you ever see an error message, don't panic. R is just telling you that your computer couldn't understand or do what you asked it to do. You can then try a different command at the next prompt:
-
-``` r
-> 3 % 5
-Error: unexpected input in "3 % 5"
->
-```
-
-Once you get the hang of the command line, you can easily do anything in R that you would do with a calculator. For example, you could do some basic arithmetic:
-
-``` r
-2 * 3   
-## 6
-
-4 - 1   
-## 3
-
-6 / (4 - 1)   
-## 2
-```
-
-Did you notice something different about this code? I've left out the `>`'s and `[1]`'s. This will make the code easier to copy and paste if you want to put it in your own console.
-
-R treats the hashtag character, `#`, in a special way; R will not run anything that follows a hashtag on a line. This makes hashtags very useful for adding comments and annotations to your code. Humans will be able to read the comments, but your computer will pass over them. The hashtag is known as the *commenting symbol* in R.
-
-For the remainder of the book, I'll use hashtags to display the output of R code. I'll use a single hashtag to add my own comments and a double hashtag, `##`, to display the results of code. I'll avoid showing `>`s and `[1]`s unless I want you to look at them.
-
 ::: {.callout-important caption="Cancelling commands"}
 Some R commands may take a long time to run. You can cancel a command once it has begun by pressing ctrl + c. Note that it may also take R a long time to cancel the command.
 :::
@@ -101,46 +50,6 @@ That's the basic interface for executing R code in RStudio. Think you have it? I
 3.  Subtract 6 from the answer.
 4.  Divide what you get by 3.
 :::
-
-Throughout the book, I'll put exercises in chunks, like the one above. I'll follow each exercise with a model answer, like the one below.
-
-You could start with the number 10, and then do the following steps:
-
-``` r
-10 + 2
-## 12
-
-12 * 3
-## 36
-
-36 - 6
-## 30
-
-30 / 3
-## 10
-```
-
-## Objects
-
-Now that you know how to use R, let's use it to make a virtual die. The `:` operator from a couple of pages ago gives you a nice way to create a group of numbers from one to six. The `:` operator returns its results as a **vector**, a one-dimensional set of numbers:
-
-``` r
-1:6
-## 1 2 3 4 5 6
-```
-
-That's all there is to how a virtual die looks! But you are not done yet. Running `1:6` generated a vector of numbers for you to see, but it didn't save that vector anywhere in your computer's memory. What you are looking at is basically the footprints of six numbers that existed briefly and then melted back into your computer's RAM. If you want to use those numbers again, you'll have to ask your computer to save them somewhere. You can do that by creating an R *object*.
-
-R lets you save data by storing it inside an R object. What is an object? Just a name that you can use to call up stored data. For example, you can save data into an object like *`a`* or *`b`*. Wherever R encounters the object, it will replace it with the data saved inside, like so:
-
-``` r
-a <- 1
-a
-## 1
-
-a + 2
-## 3
-```
 
 ::: {.callout-note caption="What just happened?"}
 1.  To create an R object, choose a name and then use the less-than symbol, `<`, followed by a minus sign, `-`, to save data into it. This combination looks like an arrow, `<-`. R will make an object, give it your name, and store in it whatever follows the arrow. So `a <- 1` stores `1` in an object named `a`.
@@ -372,228 +281,6 @@ sample(size = 1, x = die)
 ## 2
 ```
 
-### Sample with Replacement
-
-If you set `size = 2`, you can *almost* simulate a pair of dice. Before we run that code, think for a minute why that might be the case. `sample` will return two numbers, one for each die:
-
-``` r
-sample(die, size = 2)
-## 3 4
-```
-
-I said this "almost" works because this method does something funny. If you use it many times, you'll notice that the second die never has the same value as the first die, which means you'll never roll something like a pair of threes or snake eyes. What is going on?
-
-By default, `sample` builds a sample *without replacement*. To see what this means, imagine that `sample` places all of the values of `die` in a jar or urn. Then imagine that `sample` reaches into the jar and pulls out values one by one to build its sample. Once a value has been drawn from the jar, `sample` sets it aside. The value doesn't go back into the jar, so it cannot be drawn again. So if `sample` selects a six on its first draw, it will not be able to select a six on the second draw; six is no longer in the jar to be selected. Although `sample` creates its sample electronically, it follows this seemingly physical behavior.
-
-One side effect of this behavior is that each draw depends on the draws that come before it. In the real world, however, when you roll a pair of dice, each die is independent of the other. If the first die comes up six, it does not prevent the second die from coming up six. In fact, it doesn't influence the second die in any way whatsoever. You can recreate this behavior in `sample` by adding the argument `replace = TRUE`:
-
-``` r
-sample(die, size = 2, replace = TRUE)
-## 5 5
-```
-
-The argument `replace = TRUE` causes `sample` to sample *with replacement*. Our jar example provides a good way to understand the difference between sampling with replacement and without. When `sample` uses replacement, it draws a value from the jar and records the value. Then it puts the value back into the jar. In other words, `sample` *replaces* each value after each draw. As a result, `sample` may select the same value on the second draw. Each value has a chance of being selected each time. It is as if every draw were the first draw.
-
-Sampling with replacement is an easy way to create *independent random samples*. Each value in your sample will be a sample of size one that is independent of the other values. This is the correct way to simulate a pair of dice:
-
-``` r
-sample(die, size = 2, replace = TRUE)
-## 2 4
-```
-
-Congratulate yourself; you've just run your first simulation in R! You now have a method for simulating the result of rolling a pair of dice. If you want to add up the dice, you can feed your result straight into the `sum` function:
-
-``` r
-dice <- sample(die, size = 2, replace = TRUE)
-dice
-## 2 4
-
-sum(dice)
-## 6
-```
-
-What would happen if you call `dice` multiple times? Would R generate a new pair of dice values each time? Let's give it a try:
-
-``` r
-dice
-## 2 4
-
-dice
-## 2 4
-
-dice
-## 2 4
-```
-
-Nope. Each time you call `dice`, R will show you the result of that one time you called `sample` and saved the output to `dice`. R won't rerun `sample(die, 2, replace = TRUE)` to create a new roll of the dice. This is a relief in a way. Once you save a set of results to an R object, those results do not change. Programming would be quite hard if the values of your objects changed each time you called them.
-
-However, it *would* be convenient to have an object that can re-roll the dice whenever you call it. You can make such an object by writing your own R function.
-
-## Writing Your Own Functions {#sec-write-functions}
-
-To recap, you already have working R code that simulates rolling a pair of dice:
-
-``` r
-die <- 1:6
-dice <- sample(die, size = 2, replace = TRUE)
-sum(dice)
-```
-
-You can retype this code into the console anytime you want to re-roll your dice. However, this is an awkward way to work with the code. It would be easier to use your code if you wrapped it into its own function, which is exactly what we'll do now. We're going to write a function named `roll` that you can use to roll your virtual dice. When you're finished, the function will work like this: each time you call `roll()`, R will return the sum of rolling two dice:
-
-``` r
-roll()
-## 8 
-
-roll()
-## 3
-
-roll()
-## 7
-```
-
-Functions may seem mysterious or fancy, but they are just another type of R object. Instead of containing data, they contain code. This code is stored in a special format that makes it easy to reuse the code in new situations. You can write your own functions by recreating this format.
-
-### The Function Constructor
-
-Every function in R has three basic parts: a name, a body of code, and a set of arguments. To make your own function, you need to replicate these parts and store them in an R object, which you can do with the `function` function. To do this, call `function()` and follow it with a pair of braces, `{}`:
-
-``` r
-my_function <- function() {}
-```
-
-`function` will build a function out of whatever R code you place between the braces. For example, you can turn your dice code into a function by calling:
-
-``` r
-roll <- function() {
-  die <- 1:6
-  dice <- sample(die, size = 2, replace = TRUE)
-  sum(dice)
-}
-```
-
-::: callout-note
-Notice that I indented each line of code between the braces. This makes the code easier for you and me to read but has no impact on how the code runs. R ignores spaces and line breaks and executes one complete expression at a time.
-:::
-
-Just hit the Enter key between each line after the first brace, `{`. R will wait for you to type the last brace, `}`, before it responds.
-
-Don't forget to save the output of `function` to an R object. This object will become your new function. To use it, write the object's name followed by an open and closed parenthesis:
-
-``` r
-roll()
-## 9
-```
-
-You can think of the parentheses as the "trigger" that causes R to run the function. If you type in a function's name *without* the parentheses, R will show you the code that is stored inside the function. If you type in the name *with* the parentheses, R will run that code:
-
-``` r
-roll
-## function() {
-##   die <- 1:6
-##   dice <- sample(die, size = 2, replace = TRUE)
-##   sum(dice)
-## }
-
-roll()
-## 6
-```
-
-The code that you place inside your function is known as the *body* of the function. When you run a function in R, R will execute all of the code in the body and then return the result of the last line of code. If the last line of code doesn't return a value, neither will your function, so you want to ensure that your final line of code returns a value. One way to check this is to think about what would happen if you ran the body of code line by line in the command line. Would R display a result after the last line, or would it not?
-
-Here's some code that would display a result:
-
-``` r
-dice
-1 + 1
-sqrt(2)
-```
-
-And here's some code that would not:
-
-``` r
-dice <- sample(die, size = 2, replace = TRUE)
-two <- 1 + 1
-a <- sqrt(2)
-```
-
-Do you notice the pattern? These lines of code do not return a value to the command line; they save a value to an object.
-
-## Arguments
-
-What if we removed one line of code from our function and changed the name `die` to `bones`, like this?
-
-``` r
-roll2 <- function() {
-  dice <- sample(bones, size = 2, replace = TRUE)
-  sum(dice)
-}
-```
-
-Now I'll get an error when I run the function. The function needs the object `bones` to do its job, but there is no object named `bones` to be found:
-
-``` r
-roll2()
-## Error in sample(bones, size = 2, replace = TRUE) : 
-##   object 'bones' not found
-```
-
-You can supply `bones` when you call `roll2` if you make `bones` an argument of the function. To do this, put the name `bones` in the parentheses that follow `function` when you define `roll2`:
-
-``` r
-roll2 <- function(bones) {
-  dice <- sample(bones, size = 2, replace = TRUE)
-  sum(dice)
-}
-```
-
-Now `roll2` will work as long as you supply `bones` when you call the function. You can take advantage of this to roll different types of dice each time you call `roll2`. Dungeons and Dragons, here we come!
-
-Remember, we're rolling pairs of dice:
-
-``` r
-roll2(bones = 1:4)
-##  3
-
-roll2(bones = 1:6)
-## 10
-
-roll2(1:20)
-## 31
-```
-
-Notice that `roll2` will still give an error if you do not supply a value for the `bones` argument when you call `roll2`:
-
-``` r
-roll2()
-## Error in sample(bones, size = 2, replace = TRUE) : 
-##   argument "bones" is missing, with no default
-```
-
-You can prevent this error by giving the `bones` argument a default value. To do this, set `bones` equal to a value when you define `roll2`:
-
-``` r
-roll2 <- function(bones = 1:6) {
-  dice <- sample(bones, size = 2, replace = TRUE)
-  sum(dice)
-}
-```
-
-Now you can supply a new value for `bones` if you like, and `roll2` will use the default if you do not:
-
-``` r
-roll2()
-## 9
-```
-
-You can give your functions as many arguments as you like. Just list their names, separated by commas, in the parentheses that follow `function`. When the function is run, R will replace each argument name in the function body with the value that the user supplies for the argument. If the user does not supply a value, R will replace the argument name with the argument's default value (if you defined one).
-
-To summarize, `function` helps you construct your own R functions. You create a body of code for your function to run by writing code between the braces that follow `function`. You create arguments for your function to use by supplying their names in the parentheses that follow `function`. Finally, you give your function a name by saving its output to an R object, as shown in @fig-functions.
-
-Once you've created your function, R will treat it like every other function in R. Think about how useful this is. Have you ever tried to create a new Excel option and add it to Microsoft's menu bar? Or a new slide animation and add it to Powerpoint's options? When you work with a programming language, you can do these types of things. As you learn to program in R, you will be able to create new, customized, reproducible tools for yourself whenever you like. [Project 3: Slot Machine](#slots) will teach you much more about writing functions in R.
-
-![Every function in R has the same parts, and you can use function to create these parts. Assign the result to a name, so you can call the function later.](images/hopr_0106.png){#fig-functions}
-
 ## Scripts
 
 What if you want to edit `roll2` again? You could go back and retype each line of code in `roll2`, but it would be so much easier if you had a draft of the code to start from. You can create a draft of your code as you go by using an R *script*. An R script is just a plain text file that you save R code in. You can open an R script in RStudio by going to `File > New File > R script` in the menu bar. RStudio will then open a fresh script above your console pane, as shown in @fig-script.
@@ -602,14 +289,6 @@ I strongly encourage you to write and edit all of your R code in a script before
 
 ![When you open an R Script (File \> New File \> R Script in the menu bar), RStudio creates a fourth pane above the console where you can write and edit your code.](images/hopr_0107.png){#fig-script}
 
-RStudio comes with many built-in features that make it easy to work with scripts. First, you can automatically execute a line of code in a script by clicking the Run button, as shown in @fig-run.
-
-R will run whichever line of code your cursor is on. If you have a whole section highlighted, R will run the highlighted code. Alternatively, you can run the entire script by clicking the Source button. Don't like clicking buttons? You can use Control + Return as a shortcut for the Run button. On Macs, that would be Command + Return.
-
-![You can run a highlighted portion of code in your script if you click the Run button at the top of the scripts pane. You can run the entire script by clicking the Source button.](images/hopr_0108.png){#fig-run}
-
-If you're not convinced about scripts, you soon will be. It becomes a pain to write multi-line code in the console's single-line command line. Let's avoid that headache and open your first script now before we move to the next chapter.
-
 ::: callout-tip
 ## Extract function
 
@@ -617,13 +296,3 @@ RStudio comes with a tool that can help you build functions. To use it, highligh
 
 You may want to double-check RStudio's work. It assumes that your code is correct, so if it does something surprising, you may have a problem in your code.
 :::
-
-## Summary
-
-You've covered a lot of ground already. You now have a virtual die stored in your computer's memory, as well as your own R function that rolls a pair of dice. You've also begun speaking the R language.
-
-As you've seen, R is a language that you can use to talk to your computer. You write commands in R and run them at the command line for your computer to read. Your computer will sometimes talk back--for example, when you commit an error--but it usually just does what you ask and then displays the result.
-
-The two most important components of the R language are objects, which store data, and functions, which manipulate data. R also uses a host of operators like `+`, `-`, `*`, `/`, and `<-` to do basic tasks. As a data scientist, you will use R objects to store data in your computer's memory, and you will use functions to automate tasks and do complicated calculations. We will examine objects in more depth later in [Project 2: Playing Cards](#sec-project-cards) and dig further into functions in [Project 3: Slot Machine](#sec-project-slots). The vocabulary you have developed here will make each of those projects easier to understand. However, we're not done with your dice yet.
-
-In [Packages and Help Pages](#sec-packages-and-help), you'll run some simulations on your dice and build your first graphs in R. You'll also look at two of the most useful components of the R language: R *packages*, which are collections of functions writted by R's talented community of developers, and R documentation, which is a collection of help pages built into R that explains every function and data set in the language.
