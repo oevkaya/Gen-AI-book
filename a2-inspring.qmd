@@ -1,0 +1,7 @@
+# Inspring People
+
+During that journey, never possible to follow all details so there are very keen researchers ot developers out there who are trying, experimenting, reflecting on LLM related platforms or academic papers. In general, I will present a couple of people that are crucial to follow to understand what is happening in the field.
+
+## Sebastian Raschka
+
+## Ethan Mollick

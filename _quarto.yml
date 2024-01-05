@@ -16,30 +16,27 @@ book:
     - part: Intro_GenAI.qmd
       chapters: 
         - basics.qmd
-        - packages.qmd
-    - part: cards.qmd
+        - transformers.qmd
+    - part: LLMs.qmd
       chapters:
-        - objects.qmd
-        - notation.qmd
-        - modifying.qmd
-        - environments.qmd
-    - part: slots.qmd
+        - ChatGPT.qmd
+    - part: Prompting.qmd
       chapters:
-        - programs.qmd
-        - s3.qmd
-        - loops.qmd
-        - speed.qmd
+        - GeneralTips.qmd
+    - part: AdvancedTopics.qmd
+      chapters:
+        - Usecases.qmd
   appendices:
-    - a1-starting.qmd
-    - a2-packages.qmd
-    - a3-updating.qmd
-    - a4-data.qmd
-    - a5-debug.qmd 
+    - a1-ext-sources.qmd
+    - a2-inspring.qmd
+    - a3-GenAI-maths.qmd
+    - a4-OtherTools.qmd
+    - a5-FurtheRead.qmd 
 
 format:
   html: 
     theme: cosmo
-    cover-image: cover.png
+    cover-image: GenAIbanner.png
     code-link: true
 
 

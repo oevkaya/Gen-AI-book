@@ -1,0 +1,3 @@
+# Prompt Engineering {#sec-prompting-tips}
+
+Prompt engineering is a relatively new discipline for developing and optimizing prompts to efficiently apply and build with large language models (LLMs) for a wide variety of applications and use cases.

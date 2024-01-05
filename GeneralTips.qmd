@@ -1,0 +1,3 @@
+# General Tips
+
+Here are some tips to keep in mind while you are designing your prompts:

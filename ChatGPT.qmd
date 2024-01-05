@@ -1,0 +1,37 @@
+# ChatGPTs {#sec-chatGPT}
+
+This chapter provides a brief overview of the Gen-AI related advancements in the last couple of years.
+
+## ChatGPT 3.5 or older
+
+## ChatGPT 4 and related versions
+
+## ChatGPT Code Interpreter
+
+Although "Code Interpreter" may sound like a programming instrument, this is not the case. Consider it your personal AI programming assistant, capable of composing and executing Python code to suit your requirements. It is intended to simplify your life, particularly if you are not a coder \[3\]. More technically, it provides the AI with a general-purpose toolbox to solve problems (by writing code in Python), a large memory to work with (you can upload files up to 100MB in size, and they can be compressed), and integrates this toolbox into the AI in a manner that leverages the strengths of Large Language Models \[4\].
+
+Briefly, the ChatGPT-CodIn plugin has following functionalities:
+
+-   It integrates a Python interpreter into the ChatGPT environment for in-place programme execution. For example, it can use the Matplotlib library for data visualisation, PIL for image processing, Graphviz for flow chat production, etc., all of which are Python libraries.
+
+-   Code execution, data analysis, and file management are all performed in a firewall-protected sandbox to provide the highest level of security.
+
+-   This controlled environment includes temporary disc space and enables file uploads and downloads to the active conversation workspace.
+
+-   The plugin evaluates code in a persistent session that remains active until the specified timeout limit is reached.
+
+-   This enables commands to build upon one another, creating a secure, streamlined, and interactive coding experience.
+
+This plugin is mainly capable of;
+
+-   utilising external files, executing scripts, creating multiple scripts to address a single query, and
+
+-   incorporating answers directly into the response.
+
+-   Moreover, it has additional functionalities such as debugging and self-correction, the ability to seek modifications or clarifications after script generation, as well as file downloading.
+
+## Other extensions
+
+Similar to the Code interpreter, there are various plug-ins already available for the user to explore. One can open one of the suitable ones or multiple of them while sending prompts to the system.
+
+## Make your own GPTs

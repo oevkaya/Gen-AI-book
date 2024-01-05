@@ -7,10 +7,12 @@ description-meta: |
 
 This is the booklet for **"Generative AI"**. You'll learn;
 
--   **Basics and history of the development**
--   **Related Glossary**
--   **Different Language Models**
--   **Prompt Engineering concepts and more**
+-   *Basics and history of the development*
+-   *Related Glossary*
+-   *Different Language Models*
+-   *Prompt Engineering concepts and more*
+-   *Advanced Gen-AI related methods or tools*
+-   *Additional resources as extra*
 
 ::: {.callout-note appearance="simple"}
 This booklet is a collection of useful and up to date Generative AI related sources. The booklet starts with a general introduction about the history and some concepts first. Thereafter, various Gen-AI related terms or sources will be listed.
@@ -18,13 +20,11 @@ This booklet is a collection of useful and up to date Generative AI related sour
 
 ## Credits
 
-This book template is borrowed from [Hands-On Programming with R by Garrett Grolemund](https://jjallaire.github.io/hopr/) and inspired from different quarto books.
+This book template is borrowed from [Hands-On Programming with R by Garrett Grolemund](https://jjallaire.github.io/hopr/) and inspired from different quarto books. All the related main sources that are considered are listed as a references at the end.
 
 ## License
 
-This booklet is **free to use**, and is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivs 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) License.
-
-[Generative AI Booklet]()© 2024 is licensed under CC BY-NC 4.0 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" style="margin-left:3px;vertical-align:text-bottom;" width="28"/><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" style="margin-left:3px;vertical-align:text-bottom;" width="28"/><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" style="margin-left:3px;vertical-align:text-bottom;" width="28"/>
+[Generative AI Booklet]()© 2024 is **free to use** and is licensed under CC BY-NC 4.0 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" style="margin-left:3px;vertical-align:text-bottom;" width="28"/><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" style="margin-left:3px;vertical-align:text-bottom;" width="28"/><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" style="margin-left:3px;vertical-align:text-bottom;" width="28"/>
 
 ## Contributing
 

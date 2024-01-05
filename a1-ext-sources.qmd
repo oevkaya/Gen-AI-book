@@ -1,0 +1,27 @@
+# External Sources
+
+## Technical documents
+
+## Must read
+
+## Must Watch
+
+## Open source courses
+
+One of the pionering website that regularly shares LLM related open courses with experts is called the [Deeplearning.ai](https://www.deeplearning.ai/short-courses/). They have a list of good courses to deiv in, including but not limited to;
+
+-   ChatGPT Prompt Engineering for Developers:
+
+    -   Learn prompt engineering best practices for application development
+    -   Discover new ways to use LLMs, including how to build your own chatbot
+    -   Gain hands-on practice writing and iterating on prompts using the OpenAI API
+
+-   Building Systems with the ChatGPT API
+
+-   LangChain: Chat with Your Data
+
+-   Finetuning Large Language Models
+
+-   Reinforcement Learning from Human Feedback
+
+-   Quality and Safety for LLM Applications

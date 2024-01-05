@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Ozan Evkaya">
-<meta name="description" content="<p>This is the booklet for <strong>“Generative AI”</strong>.</p>">
 
-<title>Generative Artificial Intelligence (Gen-AI) booklet</title>
+<title>Generative Artificial Intelligence (Gen-AI) booklet - Main Actors: Different LLMs</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./preface.html" rel="next">
+<link href="./ChatGPT.html" rel="next">
+<link href="./transformers.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -75,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Welcome</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./LLMs.html">Main Actors: Different LLMs</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -128,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Welcome</span></a>
   </div>
 </li>
@@ -163,7 +162,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./LLMs.html" class="sidebar-item-text sidebar-link">
+            <a href="./LLMs.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Main Actors: Different LLMs</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -259,35 +258,20 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a></li>
-  <li><a href="#credits" id="toc-credits" class="nav-link" data-scroll-target="#credits">Credits</a></li>
-  <li><a href="#license" id="toc-license" class="nav-link" data-scroll-target="#license">License</a></li>
-  <li><a href="#contributing" id="toc-contributing" class="nav-link" data-scroll-target="#contributing">Contributing</a></li>
-  </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/oevkaya/Gen-AI-book/edit/master/index.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Generative Artificial Intelligence (Gen-AI) booklet</h1>
+<h1 class="title"><span id="sec-actors-llms" class="quarto-section-identifier">Main Actors: Different LLMs</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Ozan Evkaya </p>
-          </div>
-  </div>
     
   
     
@@ -296,43 +280,28 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-
-<section id="welcome" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="welcome">Welcome</h2><p><img src="GenAIbanner.png" title="Generative Artificial Intelligence (Gen-AI) booklet" class="quarto-cover-image img-fluid"></p>
-<p>This is the booklet for <strong>“Generative AI”</strong>. You’ll learn;</p>
+<p>This project–which spans the next four chapters–will teach you how to store, retrieve, and change data values in your computer’s memory. These skills will help you save and manage data without accumulating errors. In the project, you’ll design a deck of playing cards that you can shuffle and deal from. Best of all, the deck will remember which cards have been dealt–just like a real deck. You can use the deck to play card games, tell fortunes, and test card-counting strategies.</p>
+<p>Along the way, you will learn how to:</p>
 <ul>
-<li><em>Basics and history of the development</em></li>
-<li><em>Related Glossary</em></li>
-<li><em>Different Language Models</em></li>
-<li><em>Prompt Engineering concepts and more</em></li>
-<li><em>Advanced Gen-AI related methods or tools</em></li>
-<li><em>Additional resources as extra</em></li>
+<li>Save new types of data, like character strings and logical values</li>
+<li>Save a data set as a vector, matrix, array, list, or data frame</li>
+<li>Load and save your own data sets with R</li>
+<li>Extract individual values from a data set</li>
+<li>Change individual values within a data set</li>
+<li>Write logical tests</li>
+<li>Use R’s missing-value symbol, NA</li>
 </ul>
-<div class="callout callout-style-simple callout-note">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>This booklet is a collection of useful and up to date Generative AI related sources. The booklet starts with a general introduction about the history and some concepts first. Thereafter, various Gen-AI related terms or sources will be listed.</p>
-</div>
-</div>
-</div>
-</section>
-<section id="credits" class="level2">
-<h2 class="anchored" data-anchor-id="credits">Credits</h2>
-<p>This book template is borrowed from <a href="https://jjallaire.github.io/hopr/">Hands-On Programming with R by Garrett Grolemund</a> and inspired from different quarto books. All the related main sources that are considered are listed as a references at the end.</p>
-</section>
-<section id="license" class="level2">
-<h2 class="anchored" data-anchor-id="license">License</h2>
-<p><a href="">Generative AI Booklet</a>© 2024 is <strong>free to use</strong> and is licensed under CC BY-NC 4.0 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" style="margin-left:3px;vertical-align:text-bottom;" width="28"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" style="margin-left:3px;vertical-align:text-bottom;" width="28"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" style="margin-left:3px;vertical-align:text-bottom;" width="28"></p>
-</section>
-<section id="contributing" class="level2">
-<h2 class="anchored" data-anchor-id="contributing">Contributing</h2>
-<p>This book is free and open source, so please do <a href="my-website">open an issue</a> if you notice a problem!</p>
+<p>To keep the project simple, I’ve divided it into four tasks. Each task will teach you a new skill for managing data with R:</p>
+<p><strong>Task 1: build the deck</strong><br>
+In <a href="#sec-r-objects">R Objects</a>, you will design and build a virtual deck of playing cards. This will be a complete data set, just like the ones you will use as a data scientist. You’ll need to know how to use R’s data types and data structures to make this work.</p>
+<p><strong>Task 2: write functions that deal and shuffle</strong><br>
+Next, in <a href="#sec-r-notation">R Notation</a>, you will write two functions to use with the deck. One function will deal cards from the deck, and the other will reshuffle the deck. To write these functions, you’ll need to know how to extract values from a data set with R.</p>
+<p><strong>Task 3: change the point system to suit your game</strong><br>
+In <a href="#sec-modifying-values">Modifying Values</a>, you will use R’s notation system to change the point values of your cards to match the card games you may wish to play, like war, hearts, or blackjack. This will help you change values in place in existing data sets.</p>
+<p><strong>Task 4: manage the state of the deck</strong><br>
+Finally, in <a href="#sec-environments">Environments</a>, you will make sure that your deck remembers which cards it has dealt. This is an advanced task, and it will introduce R’s environment system and scoping rules. To do it successfully, you will need to learn the minute details of how R looks up and uses the data that you have stored in your computer.</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -570,10 +539,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./transformers.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Understanding Transformers</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./preface.html" class="pagination-link">
-        <span class="nav-page-text">Preface</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./ChatGPT.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">ChatGPTs</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -581,4 +553,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/oevkaya/Gen-AI-book/edit/master/LLMs.qmd" class="toc-action">Edit this page</a></p></div></div></div></div></footer></body></html>
