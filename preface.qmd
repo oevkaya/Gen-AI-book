@@ -10,11 +10,17 @@ In the light of all of these,
 
 Throughout the booklet, some related terms will be used interchangeably such as Gen-AI, Large Language Models (LLMs) or Foundation models.
 
-Different LLMs will be stated explicitly
+Different LLMs will be stated explicitly based on their properties. Some visual aids will be used for the general summary by citing their main source.
+
+## Why?
+
+After spending one year with all the breakthroughs! in Gen-AI we all both amazed and frightened by their capabilities. To some extent, as a society, once again, we saw that how quick we are for the embracement of some tools even if all other big problems still persistent. Especially, in the higher education landscape, both naysayers or yeasayers experiences certain benefits and challenges while day-by-day new tools and developments are announced. For that reason, my humble opinion is that it is better to curate related sources and materials on a unique website by knowing that this is impossible from the beginning!
 
 ## Who is this for?
 
-## Why?
+All Gen-AI lovers! and people who are interested in regularly looking at certain resources are welcome aboard.
+
+For sure, personally, I can not handle all of those so my humble dream is that you want to add comments or do some edits to the book.
 
 ## Acknowledgments
 

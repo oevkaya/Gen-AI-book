@@ -5,10 +5,12 @@ project:
 book:
   title: "Generative Artificial Intelligence (Gen-AI) booklet"
   author: "Ozan Evkaya"
+  search: true
   cover-image: images/cover.png
   repo-url: https://github.com/oevkaya/Gen-AI-book
   repo-branch: master
   repo-actions: [edit]
+  downloads: [pdf, epub]
   sharing: [twitter, facebook, linkedin]
   chapters:
     - index.qmd
@@ -32,6 +34,9 @@ book:
     - a3-GenAI-maths.qmd
     - a4-OtherTools.qmd
     - a5-FurtheRead.qmd 
+
+comments:
+  hypothesis: true
 
 format:
   html: 
