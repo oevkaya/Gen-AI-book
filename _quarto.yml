@@ -18,16 +18,23 @@ book:
     - part: Intro_GenAI.qmd
       chapters: 
         - basics.qmd
+        - Glossary.qmd
         - transformers.qmd
     - part: LLMs.qmd
       chapters:
         - ChatGPT.qmd
+        - Bard-Gemini.qmd
+        - Claude2.qmd
+        - Llama2.qmd
+        - OtherLLMs.qmd
     - part: Prompting.qmd
       chapters:
         - GeneralTips.qmd
+        - Strategies.qmd
     - part: AdvancedTopics.qmd
       chapters:
         - Usecases.qmd
+        - LLM-apps.qmd
   appendices:
     - a1-ext-sources.qmd
     - a2-inspring.qmd
@@ -41,7 +48,7 @@ comments:
 format:
   html: 
     theme: cosmo
-    cover-image: GenAIbanner.png
+    cover-image: images/GenAIbanner.png
     code-link: true
 
 

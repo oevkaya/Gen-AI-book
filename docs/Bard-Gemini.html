@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Generative Artificial Intelligence (Gen-AI) booklet - 9&nbsp; General Tips</title>
+<title>Generative Artificial Intelligence (Gen-AI) booklet - 5&nbsp; old Bard new Gemini</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./Strategies.html" rel="next">
-<link href="./Prompting.html" rel="prev">
+<link href="./Claude2.html" rel="next">
+<link href="./ChatGPT.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -75,7 +75,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Prompting.html">Prompt Engineering</a></li><li class="breadcrumb-item"><a href="./GeneralTips.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">General Tips</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./LLMs.html">Main Actors: Different LLMs</a></li><li class="breadcrumb-item"><a href="./Bard-Gemini.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">old Bard new Gemini</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -201,7 +201,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Bard-Gemini.html" class="sidebar-item-text sidebar-link">
+  <a href="./Bard-Gemini.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">old Bard new Gemini</span></span></a>
   </div>
 </li>
@@ -236,7 +236,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./GeneralTips.html" class="sidebar-item-text sidebar-link active">
+  <a href="./GeneralTips.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">General Tips</span></span></a>
   </div>
 </li>
@@ -312,14 +312,21 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#googles-bard" id="toc-googles-bard" class="nav-link active" data-scroll-target="#googles-bard"><span class="header-section-number">5.1</span> Google’s Bard</a></li>
+  <li><a href="#now-gemini" id="toc-now-gemini" class="nav-link" data-scroll-target="#now-gemini"><span class="header-section-number">5.2</span> Now Gemini</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/oevkaya/Gen-AI-book/edit/master/Bard-Gemini.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-prompt-tips" class="quarto-section-identifier"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">General Tips</span></span></h1>
+<h1 class="title"><span id="sec-gemini" class="quarto-section-identifier"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">old Bard new Gemini</span></span></h1>
 </div>
 
 
@@ -334,9 +341,15 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Here are some tips to keep in mind while you are designing your prompts:</p>
+<p>This chapter provides a brief overview of the Gen-AI related advancements in the last couple of years.</p>
+<section id="googles-bard" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="googles-bard"><span class="header-section-number">5.1</span> Google’s Bard</h2>
+</section>
+<section id="now-gemini" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="now-gemini"><span class="header-section-number">5.2</span> Now Gemini</h2>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -574,13 +587,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./Prompting.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Prompt Engineering</span>
+      <a href="./ChatGPT.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">ChatGPTs</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Strategies.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Main Strategies</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./Claude2.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Antrophic’s Claude2</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -588,4 +601,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/oevkaya/Gen-AI-book/edit/master/GeneralTips.qmd" class="toc-action">Edit this page</a></p></div></div></div></div></footer></body></html>
+</body></html>

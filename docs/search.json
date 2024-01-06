@@ -870,9 +870,9 @@
   {
     "objectID": "ChatGPT.html#chatgpt-3.5-or-older",
     "href": "ChatGPT.html#chatgpt-3.5-or-older",
-    "title": "3  ChatGPTs",
-    "section": "3.1 ChatGPT 3.5 or older",
-    "text": "3.1 ChatGPT 3.5 or older\nOfficially, “ChatGPT is a sibling model to InstructGPT, which is trained to follow an instruction in a prompt and provide a detailed response.”\nFor this version, the official announcement made by Open-AI on November 30, 2022 and so many things happened afterwards."
+    "title": "4  ChatGPTs",
+    "section": "4.1 ChatGPT 3.5 or older",
+    "text": "4.1 ChatGPT 3.5 or older\nOfficially, “ChatGPT is a sibling model to InstructGPT, which is trained to follow an instruction in a prompt and provide a detailed response.”\nFor this version, the official announcement made by Open-AI on November 30, 2022 and so many things happened afterwards."
   },
   {
     "objectID": "ChatGPT.html#chatgpt-4-and-related-versions",
@@ -884,23 +884,23 @@
   {
     "objectID": "ChatGPT.html#chatgpt-code-interpreter",
     "href": "ChatGPT.html#chatgpt-code-interpreter",
-    "title": "3  ChatGPTs",
-    "section": "3.3 ChatGPT Code Interpreter",
-    "text": "3.3 ChatGPT Code Interpreter\nAlthough “Code Interpreter” may sound like a programming instrument, this is not the case. Consider it your personal AI programming assistant, capable of composing and executing Python code to suit your requirements. It is intended to simplify your life, particularly if you are not a coder [3]. More technically, it provides the AI with a general-purpose toolbox to solve problems (by writing code in Python), a large memory to work with (you can upload files up to 100MB in size, and they can be compressed), and integrates this toolbox into the AI in a manner that leverages the strengths of Large Language Models [4].\nBriefly, the ChatGPT-CodIn plugin has following functionalities:\n\nIt integrates a Python interpreter into the ChatGPT environment for in-place programme execution. For example, it can use the Matplotlib library for data visualisation, PIL for image processing, Graphviz for flow chat production, etc., all of which are Python libraries.\nCode execution, data analysis, and file management are all performed in a firewall-protected sandbox to provide the highest level of security.\nThis controlled environment includes temporary disc space and enables file uploads and downloads to the active conversation workspace.\nThe plugin evaluates code in a persistent session that remains active until the specified timeout limit is reached.\nThis enables commands to build upon one another, creating a secure, streamlined, and interactive coding experience.\n\nThis plugin is mainly capable of;\n\nutilising external files, executing scripts, creating multiple scripts to address a single query, and\nincorporating answers directly into the response.\nMoreover, it has additional functionalities such as debugging and self-correction, the ability to seek modifications or clarifications after script generation, as well as file downloading."
+    "title": "4  ChatGPTs",
+    "section": "4.3 ChatGPT Code Interpreter",
+    "text": "4.3 ChatGPT Code Interpreter\nAlthough “Code Interpreter” may sound like a programming instrument, this is not the case. Consider it your personal AI programming assistant, capable of composing and executing Python code to suit your requirements. It is intended to simplify your life, particularly if you are not a coder [3]. More technically, it provides the AI with a general-purpose toolbox to solve problems (by writing code in Python), a large memory to work with (you can upload files up to 100MB in size, and they can be compressed), and integrates this toolbox into the AI in a manner that leverages the strengths of Large Language Models [4].\nBriefly, the ChatGPT-CodIn plugin has following functionalities:\n\nIt integrates a Python interpreter into the ChatGPT environment for in-place programme execution. For example, it can use the Matplotlib library for data visualisation, PIL for image processing, Graphviz for flow chat production, etc., all of which are Python libraries.\nCode execution, data analysis, and file management are all performed in a firewall-protected sandbox to provide the highest level of security.\nThis controlled environment includes temporary disc space and enables file uploads and downloads to the active conversation workspace.\nThe plugin evaluates code in a persistent session that remains active until the specified timeout limit is reached.\nThis enables commands to build upon one another, creating a secure, streamlined, and interactive coding experience.\n\nThis plugin is mainly capable of;\n\nutilising external files, executing scripts, creating multiple scripts to address a single query, and\nincorporating answers directly into the response.\nMoreover, it has additional functionalities such as debugging and self-correction, the ability to seek modifications or clarifications after script generation, as well as file downloading."
   },
   {
     "objectID": "ChatGPT.html#other-extensions",
     "href": "ChatGPT.html#other-extensions",
-    "title": "3  ChatGPTs",
-    "section": "3.4 Other extensions",
-    "text": "3.4 Other extensions\nSimilar to the Code interpreter, there are various plug-ins already available for the user to explore. It includes more than 735 verified extensions (plug-ins), tailored for specific tasks . These additional tools are easily integrable and there exists various options to automate certain tasks. Each third-party plugin offers authorization for ChatGPT to query their data and some of them have access to real-time data. One can open one of the suitable ones or multiple of them while sending prompts to the system.\nTo illustrate, having a paid-membership, one can use ScholarAI that enables access to research papers, Wolfram-Alpha that increase accuracy in mathematical calculations or Noteable that allows to implement some machine learning models by simply asking questions. One specific example is given based on the Wolfram-Alpha plug-in to increase the accuracy of mathematical calculations."
+    "title": "4  ChatGPTs",
+    "section": "4.4 Other extensions",
+    "text": "4.4 Other extensions\nSimilar to the Code interpreter, there are various plug-ins already available for the user to explore. It includes more than 735 verified extensions (plug-ins), tailored for specific tasks . These additional tools are easily integrable and there exists various options to automate certain tasks. Each third-party plugin offers authorization for ChatGPT to query their data and some of them have access to real-time data. One can open one of the suitable ones or multiple of them while sending prompts to the system.\nTo illustrate, having a paid-membership, one can use ScholarAI that enables access to research papers, Wolfram-Alpha that increase accuracy in mathematical calculations or Noteable that allows to implement some machine learning models by simply asking questions. One specific example is given based on the Wolfram-Alpha plug-in to increase the accuracy of mathematical calculations."
   },
   {
     "objectID": "ChatGPT.html#make-your-own-gpts",
     "href": "ChatGPT.html#make-your-own-gpts",
-    "title": "3  ChatGPTs",
-    "section": "3.5 Make your own GPTs",
-    "text": "3.5 Make your own GPTs\nAlmost 1 year later, on a spectacular! DevDay event, Open-AI introduced another tool. As they mentioned in their advertisement and description, they rolled out custom versions of ChatGPT that you can create for a specific purpose—called GPTs.\nTheir goal is to make easier to build any kind of GPT without coding. Sounds crazy to some extent, but this is not very new indeed, many other platforms or entrepreneurship (such as Dante.ai) already created some tools to create custom Chatbots based on private data. However, their new interface is ready to use for the paid-members to create custom versions of ChatGPT that combine instructions, extra knowledge, and any combination of skills."
+    "title": "4  ChatGPTs",
+    "section": "4.5 Make your own GPTs",
+    "text": "4.5 Make your own GPTs\nAlmost 1 year later, on a spectacular! DevDay event, Open-AI introduced another tool. As they mentioned in their advertisement and description, they rolled out custom versions of ChatGPT that you can create for a specific purpose—called GPTs.\nTheir goal is to make easier to build any kind of GPT without coding. Sounds crazy to some extent, but this is not very new indeed, many other platforms or entrepreneurship (such as Dante.ai) already created some tools to create custom Chatbots based on private data. However, their new interface is ready to use for the paid-members to create custom versions of ChatGPT that combine instructions, extra knowledge, and any combination of skills."
   },
   {
     "objectID": "Prompting.html",
@@ -912,7 +912,7 @@
   {
     "objectID": "GeneralTips.html",
     "href": "GeneralTips.html",
-    "title": "4  General Tips",
+    "title": "9  General Tips",
     "section": "",
     "text": "Here are some tips to keep in mind while you are designing your prompts:"
   },
@@ -989,8 +989,29 @@
   {
     "objectID": "ChatGPT.html#gpt4-and-related-versions",
     "href": "ChatGPT.html#gpt4-and-related-versions",
-    "title": "3  ChatGPTs",
-    "section": "3.2 GPT4 and related versions",
-    "text": "3.2 GPT4 and related versions\nIt is announced as “OpenAI’s most advanced system, producing safer and more useful responses” after 2023 (literally, related website date is March 14, 2023). As they mentioned in their description, this was another milestone for many interesting reasons. Compared to ChatGPT 3.5, now we have officially “large multimodal model (accepting image and text inputs, emitting text outputs)” so they created a more powerful LLM at the end of the day.\nAs the latest milestone in OpenAI’s effort in scaling up deep learning, many people started to do some experiments with this new Gen-AI tool unless they paid the membership fees! From a different perspective, that milestone was a kind of change on Open-AI policies as well (not being really Open!). Besides, without being a member of ChatGPT Plus, user can not communicate with GPT4 model but there were various side ways indeed! As another tool, Microsoft Bing allowed users to feel the power of GPT4."
+    "title": "4  ChatGPTs",
+    "section": "4.2 GPT4 and related versions",
+    "text": "4.2 GPT4 and related versions\nIt is announced as “OpenAI’s most advanced system, producing safer and more useful responses” after 2023 (literally, related website date is March 14, 2023). As they mentioned in their description, this was another milestone for many interesting reasons. Compared to ChatGPT 3.5, now we have officially “large multimodal model (accepting image and text inputs, emitting text outputs)” so they created a more powerful LLM at the end of the day.\nAs the latest milestone in OpenAI’s effort in scaling up deep learning, many people started to do some experiments with this new Gen-AI tool unless they paid the membership fees! From a different perspective, that milestone was a kind of change on Open-AI policies as well (not being really Open!). Besides, without being a member of ChatGPT Plus, user can not communicate with GPT4 model but there were various side ways indeed! As another tool, Microsoft Bing allowed users to feel the power of GPT4."
+  },
+  {
+    "objectID": "Bard-Gemini.html#googles-bard",
+    "href": "Bard-Gemini.html#googles-bard",
+    "title": "5  old Bard new Gemini",
+    "section": "5.1 Google’s Bard",
+    "text": "5.1 Google’s Bard"
+  },
+  {
+    "objectID": "Bard-Gemini.html#now-gemini",
+    "href": "Bard-Gemini.html#now-gemini",
+    "title": "5  old Bard new Gemini",
+    "section": "5.2 Now Gemini",
+    "text": "5.2 Now Gemini"
+  },
+  {
+    "objectID": "Strategies.html",
+    "href": "Strategies.html",
+    "title": "10  Main Strategies",
+    "section": "",
+    "text": "Here are some tips to keep in mind while you are designing your prompts:"
   }
 ]

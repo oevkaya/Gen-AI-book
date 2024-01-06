@@ -1,0 +1,7 @@
+# Bard-Gemini {#sec-gemini}
+
+This chapter provides a brief overview of the Gen-AI related advancements in the last couple of years.
+
+## Google's Bard
+
+## Now Gemini
