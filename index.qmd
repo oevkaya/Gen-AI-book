@@ -5,22 +5,22 @@ description-meta: |
 
 ## Welcome {.unnumbered}
 
-This is the booklet for **"Generative AI"**. You'll learn;
+This is the booklet for **"Generative AI"**, attempted by a mortal human being!
 
 -   *Basics and history of the development*
 -   *Related Glossary*
 -   *Different Language Models*
--   *Prompt Engineering concepts and more*
--   *Advanced Gen-AI related methods or tools*
+-   *Basics of Prompt Engineering and more*
+-   *More technical concepts about Gen-AI*
 -   *Additional resources as extra*
 
 ::: {.callout-note appearance="simple"}
-This booklet is a collection of useful and up to date Generative AI related sources. The booklet starts with a general introduction about the history and some concepts first. Thereafter, various Gen-AI related terms or sources will be listed.
+This booklet is a collection of useful and up to date Generative AI related sources. Knowing that this is an unavailing effort but good to keep some general notes for some human beings!
 :::
 
 ## Credits
 
-This book template is borrowed from [Hands-On Programming with R by Garrett Grolemund](https://jjallaire.github.io/hopr/) and inspired from different quarto books. All the related main sources that are considered are listed as a references at the end.
+the general book template is borrowed from [Hands-On Programming with R by Garrett Grolemund](https://jjallaire.github.io/hopr/) and inspired from different quarto books. All the related main sources that are considered are listed as a references at the end.
 
 ## License
 
@@ -28,4 +28,4 @@ This book template is borrowed from [Hands-On Programming with R by Garrett Grol
 
 ## Contributing
 
-This book is free and open source, so please do [open an issue](my-website) if you notice a problem!
+This book is free and open source, so please do let me know your suggestions!
